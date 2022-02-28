@@ -1,10 +1,10 @@
-This is a sample Book Form widget component for wix using Jquery
-for using this project
-clone this project
-run
-npm install
-npm run build
-npm start 
+This is a sample Book Form widget component for wix using Jquery<br/>
+for using this project<br/>
+clone this project<br/>
+run <br/>
+npm install<br/>
+npm run build<br/>
+npm start <br/>
 
-All html files are inside html folder
-All js files are inside src folder
+All html files are inside html folder <br/>
+All js files are inside src folder <br/>
