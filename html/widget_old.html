@@ -272,20 +272,44 @@
             :-ms-input-placeholder {
                 color: #888;
             }
-           .iframe-box { 
-            width: 100%
-            height: 100%
-           position: absolute;
-          
-
-}
-
-
         </style>
     </head>
     <body>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <div id ="root">
-     <iframe class="iframe-box" src"https://book-qa.timify.com?accountId=61c344eb9ea3e7105cc066c4&fullscreen=1&hideCloseButton=1&resourceId=61c344eb3204db105ca4df25&locale="en-gb"></iframe>    
-</body>
+        <main>
+            <div class="container">
+                <form id="contact" action="" method="post">
+                    <h3>Booking Form</h3>
+                    <h4>Please mention details of your booking</h4>
+                    <fieldset>
+                        <input placeholder="Full Name" id="fName" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Email Address" id="email" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Telephone" id="tel" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <select id="profissao" class="product" required>
+                            <option selected value="please select" default="true">Please Select</option>
+                            <option value="Product 1" type="profissao">Product1</option>
+                            <option value="Product 2" type="profissao">Product2</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <select id="profissao">
+                            <option selected disable value="" type="profissao">Please select Profession</option>
+                            <option>Médical</option>
+                            <option>IT Service</option>
+                            <option>FreeLancer</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <button class="book" name="submit" type="submit" id="contact-submit" data-submit="...Booking">Book</button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
 </html>
