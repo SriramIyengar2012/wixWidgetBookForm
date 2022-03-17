@@ -6,6 +6,26 @@
         <script src="//static.parastorage.com/services/js-sdk/1.425.0/js/wix.min.js"></script>
         <link rel="stylesheet" href="src/widget/widget.css">
         <script src="widget.js"></script>
+        <script>
+      // Selecting the iframe element
+        var frame = document.getElementById("Iframe");
+          
+        // Adjusting the iframe height onload event
+        frame.onload = function()
+        // function execute while load the iframe
+        {
+          // set the height of the iframe as 
+          // the height of the iframe content
+          frame.style.height = 
+          frame.contentWindow.document.body.scrollHeight + 'px';
+           
+  
+         // set the width of the iframe as the 
+         // width of the iframe content
+         frame.style.width  = 
+          frame.contentWindow.document.body.scrollWidth+'px';
+             }
+       </script>
         <style wix-style>
             .wix-style-sample {
                 background: {{style._backgroundColor color-1}}
@@ -273,19 +293,20 @@
                 color: #888;
             }
            .iframe-box { 
-            width: 100%
-            height: 100%
+            width: 800
+            height: 800
            position: absolute;
           
 
 }
 
-
+.full-height {
+  height: 1000px;
+}
         </style>
     </head>
     <body>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <div id ="root">
-     <iframe class="iframe-box" src"https://book-qa.timify.com?accountId=61c344eb9ea3e7105cc066c4&fullscreen=1&hideCloseButton=1&resourceId=61c344eb3204db105ca4df25&locale="en-gb"></iframe>    
+     <div id ="root" class="full-height">
+     <iframe id="Iframe" class="full-height" width="900" src="https://book-qa.timify.com?accountId=61c344eb9ea3e7105cc066c4&fullscreen=1&hideCloseButton=1&resourceId=61c344eb3204db105ca4df25&locale="en-gb""></iframe>    
 </body>
 </html>
